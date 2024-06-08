@@ -1,0 +1,61 @@
+.fb-data-grid.datagrid-bordered.mx-datagrid {
+    background-color: #75e1c1;
+    border: 1px solid #205463;
+    
+    .mx-grid-searchbar {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .mx-grid-controlbar {
+        padding-left: 12px;
+        padding-right: 12px;    
+
+        .mx-grid-pagingbar {
+            background-color: #ffffff;
+            padding: 5px 5px 0;
+            border-radius: 5px;
+        }
+    }
+
+    .mx-grid-searchbar, .mx-grid-controlbar  {
+        .mx-button {
+            margin-bottom: 8px;
+            background-color: #13294b;
+            border-color: #06041f;
+            color: #fff;
+            &.fb-data-grid-danger { 
+                background-color: #f8485e;
+                border-color: #4c3150;
+                color: #fff;    
+            }
+        }    
+    }
+    
+    table {
+        border: 1px solid;
+
+        th {
+            border: 1px solid #3aab94;
+            background-color: #47d7ac;
+        }
+
+        tbody tr {
+            td {
+                border: 1px solid #3aab94;
+                background-color: #d1f5ea;
+            }
+        }
+    }
+
+    tfoot {
+        > tr > th {
+            border-width: 0;
+            background-color: $grid-footer-bg;
+        }
+
+        > tr > td {
+            border-width: 1px;
+        }
+    }
+}
